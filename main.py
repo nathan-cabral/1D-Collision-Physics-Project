@@ -7,8 +7,26 @@ l=1000
 h=800
 cor1=(255,0,0)
 cor2=(0,0,255)
-b1=Bloco(10,2,(l/2)+200,h/2,cor1) 
-b2=Bloco(5,3,(l/2)-200,h/2,cor2)  # criacao dos objetos em si
+
+# Pegar os dados do objeto e só dps abrir a janela de simulacao
+
+print("Welcome to 1D collison simulator made by Nathan")
+
+print("Please, enter values for velocity")
+print("Velocities permitted: -10 (m/s) to 10 (m/s)")
+vel1=int(input("Insert inicial velocity for object 1 (m/s): "))
+
+if vel1 >10:
+    print("Velocities permitted: -10 (m/s) to 10 (m/s)")
+    choice=int(input(""))
+vel2=int(input("Insert inicial velocity for object 2 (m/s): "))
+print("Please, enter positives massses for the objects")
+mass1=int(input("Insert mass for object 1 (kg): "))
+mass2=int(input("Insert mass for object 2 (kg): "))
+
+
+b1=Bloco(mass1,vel1,(l/2)+200,h/2,cor1) 
+b2=Bloco(mass2,vel2,(l/2)-200,h/2,cor2)  # criacao dos objetos
 
 window=pygame.display.set_mode((l,h)) # cria a janela de exibicao
 
