@@ -3,11 +3,14 @@ import pygame
 pygame.init()
 
 class bloco:    # criando tipo de objeto chamado bloco
-    def __init__(self,mass,vel):  #inicializar o objeto
+    def __init__(self,mass,vel,x,y):  #inicializar o objeto
                 # self=self representa o objeto na hora da criacao
 
         self.mass=mass 
         self.vel=vel
+        self.x=x
+        self.y=y
+        
         # esse ultimo mass e vel é o valor que recebi por parametro      
         # na hora da criacao do objeto blocoX=bloco(m,v)
         
@@ -17,11 +20,12 @@ class bloco:    # criando tipo de objeto chamado bloco
 '''
 
 
-bloc1=bloco(10,2) 
-bloc2=bloco(5,3)  # criacao dos objetos em si
-
 l=1000 
 h=800
+
+b1=bloco(10,2,700,h/2) 
+b2=bloco(5,3,300,h/2)  # criacao dos objetos em si
+
 
 window=pygame.display.set_mode((l,h)) # cria a janela de exibicao
 
