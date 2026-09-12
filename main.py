@@ -27,9 +27,14 @@ if vel2>10 or vel2< -10:
 
 print("Please, enter positives massses for the objects")
 mass1=int(input("Insert mass for object 1 (kg): "))
+if mass1<=0:
+    print("Please, enter positives massses for the objects")
+    mass1=int(input("Insert mass for object 1 (kg): "))        
 mass2=int(input("Insert mass for object 2 (kg): "))
-
-
+if mass2<=0:
+    print("Please, enter positives massses for the objects")
+    mass2=int(input("Insert mass for object 2 (kg): "))
+    
 b1=Bloco(mass1,vel1,(l/2)+200,h/2,cor1) 
 b2=Bloco(mass2,vel2,(l/2)-200,h/2,cor2)  # criacao dos objetos
 
