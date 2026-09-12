@@ -1,34 +1,21 @@
 import pygame
 from bloco import Bloco #importando a classe Bloco
+from gets import get_mass,get_vel #importando os gets 
 
 pygame.init()
 
-l=1000 
-h=800
+l=1000 #largura da janela
+h=800 #altura da janela
+
 cor1=(255,0,0)
 cor2=(0,0,255)
 
-# Pegar os dados do objeto e só dps abrir a janela de simulacao
+vel1=get_vel(1) # chama o get velocidade
+vel2=get_vel(2)
 
-print("Welcome to 1D collison simulator made by Nathan")
-print("Please, enter values for velocity")
-print("Velocities permitted: -10 (m/s) to 10 (m/s)")
-vel1=int(input("Insert inicial velocity for object 1 (m/s): "))
-while vel1<-10 or vel1>10:
-    vel1=int(input("Insert inicial velocity for object 1 (m/s): "))
-vel2=int(input("Insert inicial velocity for object 2 (m/s): "))
-while vel2<-10 or vel2>10:
-    vel2=int(input("Insert inicial velocity for object 2 (m/s): "))        
-print("Please, enter positives massses for the objects")
-mass1=int(input("Insert mass for object 1 (kg): "))
-while mass1<=0:
-    print("Please, enter positives massses for the objects")
-    mass1=int(input("Insert mass for object 1 (kg): "))        
-mass2=int(input("Insert mass for object 2 (kg): "))
-while mass2<=0:
-    print("Please, enter positives massses for the objects")
-    mass2=int(input("Insert mass for object 2 (kg): "))
-    
+mass1=get_mass(1) # chama o get massa
+mass2=get_mass(2)
+
 b1=Bloco(mass1,vel1,(l/2)+200,h/2,cor1) 
 b2=Bloco(mass2,vel2,(l/2)-200,h/2,cor2)  # criacao dos objetos
 
