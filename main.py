@@ -8,3 +8,5 @@ while start:
     for event in pygame.event.get():
         if event.type==pygame.QUIT:
             start=False
+
+pygame.quit()
