@@ -11,27 +11,21 @@ cor2=(0,0,255)
 # Pegar os dados do objeto e só dps abrir a janela de simulacao
 
 print("Welcome to 1D collison simulator made by Nathan")
-
 print("Please, enter values for velocity")
 print("Velocities permitted: -10 (m/s) to 10 (m/s)")
 vel1=int(input("Insert inicial velocity for object 1 (m/s): "))
-if vel1>10 or vel1< -10:
-    print("Velocities permitted: -10 (m/s) to 10 (m/s)")
+while vel1<-10 or vel1>10:
     vel1=int(input("Insert inicial velocity for object 1 (m/s): "))
-
 vel2=int(input("Insert inicial velocity for object 2 (m/s): "))
-if vel2>10 or vel2< -10:
-    print("Velocities permitted: -10 (m/s) to 10 (m/s)")
-    vel2=int(input("Insert inicial velocity for object 2 (m/s): "))
-
-
+while vel2<-10 or vel2>10:
+    vel2=int(input("Insert inicial velocity for object 2 (m/s): "))        
 print("Please, enter positives massses for the objects")
 mass1=int(input("Insert mass for object 1 (kg): "))
-if mass1<=0:
+while mass1<=0:
     print("Please, enter positives massses for the objects")
     mass1=int(input("Insert mass for object 1 (kg): "))        
 mass2=int(input("Insert mass for object 2 (kg): "))
-if mass2<=0:
+while mass2<=0:
     print("Please, enter positives massses for the objects")
     mass2=int(input("Insert mass for object 2 (kg): "))
     
