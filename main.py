@@ -1,7 +1,7 @@
 import pygame
 from bloco import Bloco #importando a classe Bloco
 from gets import get_mass,get_vel #importando os gets 
-
+from draw import Draw 
 pygame.init()
 
 l=1000 #largura da janela
@@ -24,7 +24,9 @@ window=pygame.display.set_mode((l,h)) # cria a janela de exibicao
 start=True
 
 while start:
-    for event in pygame.event.get(): # fica verificando se tem algum evento acontecendo
+    for event in pygame.event.get():# fica verificando se tem algum evento acontecendo
+        draw_b1=Draw(b1,window)
+        draw_b2=Draw(b2,window)
         if event.type==pygame.QUIT: # verifica se o user clicou no X
             start=False # se ele clicou = loop encerra e janela fecha
 
