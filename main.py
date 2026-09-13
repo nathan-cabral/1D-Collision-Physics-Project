@@ -1,6 +1,6 @@
 import pygame
 from bloco import Bloco #importando a classe Bloco
-from gets import get_mass,get_vel #importando os gets 
+from gets import get_mass,get_vel,welcome #importando os gets 
 from draw import Draw 
 pygame.init()
 
@@ -9,6 +9,8 @@ h=800 #altura da janela
 
 cor1=(255,0,0)
 cor2=(0,0,255)
+
+welcome()
 
 vel1=get_vel(1) # chama o get velocidade
 vel2=get_vel(2)
@@ -32,4 +34,4 @@ while start:
 
 #pygame.draw.rect() isso desenha a forma quadrada
 
-pygame.quit() 
+#pygame.quit() 
