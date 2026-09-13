@@ -8,7 +8,7 @@ def Draw(bloco,window):
     #pygame.Rect-> forma do quadrado
     # (x,y,largura,altura)
 
-    pygame.draw.rect(window,bloco.color,
+    pygame.draw.rect(window,bloco.cor,
                      pygame.Rect(bloco.x,bloco.y,
                                  bloco.size,bloco.size
                                  )
