@@ -13,7 +13,7 @@ cor2=(0,0,255)
 vel1=get_vel(1) # chama o get velocidade
 vel2=get_vel(2)
 
-mass1=get_mass(1) # chama o get massa
+mass1=get_mass(1) # chama o get massa 
 mass2=get_mass(2)
 
 b1=Bloco(mass1,vel1,(l/2)+200,h/2,cor1) 

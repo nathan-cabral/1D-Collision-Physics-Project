@@ -9,8 +9,8 @@ def get_vel(i):
 
 def get_mass(i):
     print("Please, enter positives massses for the objects")
-    mass=float(input("Insert mass for object 1 (kg): "))
+    mass=float(input(f"Insert mass for object {i} (kg): "))
     while mass<=0:
         print("Please, enter positives massses for the objects")
-        mass=float(input("Insert mass for object 1 (kg): "))        
+        mass=float(input(f"Insert mass for object {i} (kg): "))        
     return mass
