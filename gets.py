@@ -4,6 +4,7 @@ def get_vel(i):
     print("Velocities permitted: -10 (m/s) to 10 (m/s)")
     vel=float(input(f"Insert inicial velocity for object {i} (m/s): "))
     while vel<-10 or vel>10:
+        print("Velocities permitted: -10 (m/s) to 10 (m/s)")
         vel=float(input(f"Insert inicial velocity for object {i} (m/s): "))
     return vel
 
