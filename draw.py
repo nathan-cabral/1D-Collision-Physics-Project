@@ -13,8 +13,11 @@ def Draw(bloco,window):
                                  bloco.size,bloco.size
                                  )
                     ) 
-    
 
+def draw_info(bloco,window,nome,x,y):
+    font = pygame.font.Font(None, 24)
+    texto = font.render("TESTE", True, bloco.color)
+    window.blit(texto, (x, y))
 
     
     

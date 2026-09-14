@@ -1,7 +1,7 @@
 import pygame
 from bloco import Bloco #importando a classe Bloco
 from gets import get_mass,get_vel,welcome #importando os gets 
-from draw import Draw 
+from draw import Draw, draw_info
 pygame.init()
 
 l=1000 #largura da janela
@@ -32,6 +32,11 @@ while start:
     window.fill((0,0,0)) # limpa frame anterior 
     b1.atualizar(l)
     b2.atualizar(l)
+    # if b1.x+b1.size>=b2.x:
+
+    draw_info(b1,window,"B1",300,700)
+    draw_info(b2,window,"B2",700,700)
+
     Draw(b1,window) #cria os blocos na tela
     Draw(b2,window)
     pygame.display.update() # atualiza a cada frame
