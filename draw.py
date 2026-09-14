@@ -16,8 +16,12 @@ def Draw(bloco,window):
 
 def draw_info(bloco,window,nome,x,y):
     font = pygame.font.Font(None, 24)
-    texto = font.render("TESTE", True, bloco.color)
-    window.blit(texto, (x, y))
+    text1 = font.render(f"Mass: {bloco.mass} KG", True, bloco.cor)
+    text2 = font.render(f"Velocity: {bloco.vel} KG", True, bloco.cor)
+
+    window.blit(text1, (x, y))
+    window.blit(text2, (x, y+25))
+
 
     
     

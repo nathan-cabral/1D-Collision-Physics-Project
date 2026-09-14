@@ -34,8 +34,8 @@ while start:
     b2.atualizar(l)
     # if b1.x+b1.size>=b2.x:
 
-    draw_info(b1,window,"B1",300,700)
-    draw_info(b2,window,"B2",700,700)
+    draw_info(b1,window,"B1",800,100)
+    draw_info(b2,window,"B2",100,100)
 
     Draw(b1,window) #cria os blocos na tela
     Draw(b2,window)
