@@ -30,11 +30,11 @@ while start:
         if event.type==pygame.QUIT: # verifica se o user clicou no X
             start=False # se ele clicou = loop encerra e janela fecha
     window.fill((0,0,0)) # limpa frame anterior 
+    b1.atualizar()
+    b2.atualizar()
     Draw(b1,window) #cria os blocos na tela
     Draw(b2,window)
     pygame.display.update() # atualiza a cada frame
-    
 
-#pygame.draw.rect() isso desenha a forma quadrada
 
-pygame.quit() 
+pygame.quit()
