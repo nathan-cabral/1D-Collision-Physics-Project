@@ -6,7 +6,7 @@ class Bloco:
         self.x=x
         self.y=y
         self.cor=cor
-        self.size=mass*10
+        self.size=mass#*10
        
     def atualizar(self,l):
         self.x+=self.vel*0.5
