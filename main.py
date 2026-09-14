@@ -7,8 +7,8 @@ pygame.init()
 l=1000 #largura da janela
 h=800 #altura da janela
 
-cor1=(255,0,0)
-cor2=(0,0,255)
+cor1=(255,140,0)
+cor2=(50,220,100)
 
 welcome()
 
@@ -34,7 +34,7 @@ while start:
     b2.atualizar(l)
     # if b1.x+b1.size>=b2.x:
 
-    draw_info(b1,window,"B1",800,100)
+    draw_info(b1,window,"B1",750,100)
     draw_info(b2,window,"B2",100,100)
 
     Draw(b1,window) #cria os blocos na tela

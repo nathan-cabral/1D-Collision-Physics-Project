@@ -14,10 +14,10 @@ def Draw(bloco,window):
                                  )
                     ) 
 
-def draw_info(bloco,window,nome,x,y):
-    font = pygame.font.Font(None, 24)
-    text1 = font.render(f"Mass: {bloco.mass} KG", True, bloco.cor)
-    text2 = font.render(f"Velocity: {bloco.vel} KG", True, bloco.cor)
+def draw_info(bloco,window,nome,x,y): # cria os textos na tela
+    font = pygame.font.Font(None,30) 
+    text1 = font.render(f"Mass: {bloco.mass} kg", True, bloco.cor)
+    text2 = font.render(f"Velocity: {bloco.vel} m/s", True, bloco.cor)
 
     window.blit(text1, (x, y))
     window.blit(text2, (x, y+25))
