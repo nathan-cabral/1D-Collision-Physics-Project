@@ -12,8 +12,9 @@ class Bloco:    # criando um tipo de objeto chamado bloco
         # todos os valores dps do'=' precisam existir para serem acessados
 
     def atualizar(self,l):
-        self.x+=self.vel*0.2
+        self.x+=self.vel*0.5
         if self.x<=0: #parede esquerda
             self.vel*=-1
         if self.x+self.size>=l: #parede direita
             self.vel*=-1
+        
